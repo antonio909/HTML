@@ -1,0 +1,45 @@
+# Introdução ao HTML
+
+O HTML, ou HyperText Markup Language (Linguagem de Marcação de Hipertexto), é a "espinha dorsal de qualquer página web".
+
+### O que é?
+
+  * É uma "linguagem de marcação", não uma linguagem de programação. Isso significa que ele usa um conjunto estruturado de "tags" para estruturar e dar significado diferente ao conteúdo.
+
+  * Ele diz ao navegador web (como Chrome, Firefox, Safari) como deve ser exibida a estrutura da página (parágrafo, título, imagem, link, etc.).
+
+### Como funciona?
+
+  * O HTML é composto por "elementos". Um elemento geralmente consiste em uma "tag de abertura", o **conteúdo**, e uma "tag de fechamento".
+      * Exemplo de um parágrafo: <p>Este é o conteúdo do parágrafo.</p>
+  * Alguns elementos são "vazios" e não precisam de tag de fechamento (por exemplo, a tag para quebra de linha: <br>).
+  * As tags podem ter "atributos", que fornecem informações adicionais sobre o elemento (exemplo: `<img src="caminho/imagem.jpg" alt="Descrição da Imagem">`).
+
+## Estrutura Básica de um Documento HTML
+
+Todo documento HTML básico segue esta estrutura
+
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Título da Minha Página</title>
+    </head>
+<body>
+    <h1>Título Principal</h1>
+    <p>Meu primeiro parágrafo HTML.</p>
+</body>
+</html>
+
+  * <!DOCTYPE html>: Declara o tipo de documento, informando ao navegador que é um documento HTML5.
+  * <html></html>: O elemento raiz que envolve todo o conteúdo da página.
+  * <head></head>: Contém metadados sobre o documento (como codificação de caracteres, título da aba, links para folhas de estilo CSS, etc.).
+  * <body></body>: Contém todo o conteúdo visível da página (textos, imagens, links, tabelas, etc.).
+
+HTML, CSS e JavaScript
+
+  * HTML (Estrutura): É o esqueleto da página.
+  * CSS (Cascading Style Sheets) (Estilo): É usado para estilizar a estrutura (cores, fontes, layout, etc.).
+  * JavaScript (Comportamento): É usado para adicionar interatividade e funcionalidades dinâmicas à página.
