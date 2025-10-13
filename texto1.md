@@ -1,0 +1,111 @@
+# O que é HTML e como ele funciona?
+
+HTML é a base da World Wide Web. Ele fornece a
+estrutura e o conteúdo para cada página da web
+que você vê. Entender HTML é o primeiro passo
+para se tornar um desenvolvedor web. É a
+linguagem que os navegadores usam para
+interpretar e exibir texto, imagens e outros
+elementos multimídia. Sem HTML, a web como a
+conhecemos não existiria.
+
+# O que é HTML?
+
+HTML significa *HyperText Markup Language*
+(*Linguagem de Marcação de Hipertexto*). Vamos
+analisar cada parte desse nome:
+
+* **Hipertexto:** refere-se a textos que contêm links
+  para outros textos ou recursos. Esses links são
+  chamados de hiperlinks e permitem que os
+  usuários naveguem facilmente entre diferentes
+  páginas ou seções de uma página. Pense nisso
+  como uma rede de documentos
+  interconectados.
+
+* **Linguagem de Marcação:** Uma linguagem de
+  marcação utiliza tags para definir a estrutura e
+  a formatação de um documento. Essas tags
+  são instruções para o navegador sobre como
+  exibir o conteúdo. Ao contrário das linguagens
+  de programação, o HTML não realiza cálculos
+  ou lógicas complexas. Ele simplesmente
+  descreve o conteúdo e sua apresentação.
+
+Em essência, HTML é uma linguagem usada para
+estruturar conteúdo na web e criar hiperlinks entre
+diferentes recursos. É o esqueleto sobre o qual os
+sites são construídos.
+
+# HTML não é uma Linguagem de Programação
+
+É fundamental entender que HTML *não* é uma
+linguagem de programação. Linguagens de
+programação como JavaScript, Python ou Java são
+usadas para criar aplicativos web dinâmicos e
+interativos. HTML, por outro lado, é uma linguagem
+de marcação que se concentra na estruturação de
+conteúdo.
+
+Pense desta forma: HTML é como a planta de uma
+casa, definindo o layout dos cômodos, paredes e
+portas. JavaScript é como o sistema elétrico,
+adicionando interatividade e funcionalidade, como
+luzes que acendem e apagam ou eletrodomésticos
+que respondem à entrada do usuário.
+
+# Como funciona o HTML: uma explicação passo a passo
+
+O processo de exibição de um documento HTML
+em uma navegador da web envolve várias etapas:
+
+1. **Escrevendo código HTML:** Você, como
+   desenvolvedor web, escreve código HTML em
+   um editor de texto. Esse código consiste em
+   elementos, tags e atributos que definem a
+   estrutura e o conteúdo da sua página web.
+2. **Salvando o arquivo:** você salva o código HTML
+   em um arquivo com a extensão `.html` ou (por
+   exemplo) `.htm`, `index.html`.
+3. **Solicitação do navegador:** quando um usuário
+   digita uma URL no navegador ou clica em um
+   link, o navegador envia uma solicitação ao
+   servidor web que hospeda o site.
+4. **Resposta do servidor:** O servidor web recebe a
+   solicitação e envia o arquivo HTML
+   correspondente de volta ao navegador.
+5. **Analisando o HTML:** O analisador de HTML do
+   navegador lê o arquivo HTML e interpreta as
+   tags e elementos. Ele cria um Modelo de
+   Objeto de Documento (DOM), que é uma
+   representação em forma de árvore da
+   estrutura HTML.
+6. **Renderizando a página:** O navegador usa o
+   DOM para renderizar a página da web na tela.
+   Ele aplica estilos padrão ou estilos CSS (que
+   abordaremos em um módulo posterior) para
+   formatar o conteúdo de acordo com a
+   estrutura HTML.
+7. **Exibindo a página:** Por fim, o navegador exibe
+   a página da web totalmente renderizada ao
+   usuário.
+
+# O papel dos navegadores da Web
+
+Navegadores com Chrome, Firefox, Safari e Edge
+são essenciais para a visualização de documentos
+HTML. Eles atuam como intérpretes, pegando o
+código HTML e traduzindo-o em uma
+representação visual compreensível para os
+usuários. Navegadores diferentes podem renderizar
+o HTML de forma ligeiramente diferente, por isso é
+importante testar seus sites em vários navegadores
+para garantir a consistência.
+
+# O papel dos servidores web
+
+Servidores web são computadores que armazenam
+arquivos de sites e os entregam aos usuários
+mediante solicitação. Quando alguém digita o
+endereço de um site no navegador, o navegador
+envia uma solicitação ao servidor web.
