@@ -20,23 +20,39 @@ inicial, uma tag de conteúdo e uma tag final.
 ### Elementos e Tags
 
 * **Marcador de início:** marca o início de um
-  elemento (por exemplo: <p>).
+  elemento (por exemplo: `<p>`).
 * **Tag final:** marca o fim de um elemento e é
   semelhante à tag inicial, mas inclui uma barra
-  (por exemplo, </p>).
+  (por exemplo, `</p>`).
 * **Conteúdo:** As informações reais contidas no
   elemento (por exemplo, "Este é um parágrafo").
 * **Elementos vazios:** Alguns elementos, como
-  <br>(quebra de linha) e <img>(imagem), não
+  `<br>`(quebra de linha) e `<img>`(imagem), não
   requerem tags de fechamento. Eles são
   chamados de elementos de fechamento
   automático ou vazios. Em HTML5, você pode
   (mas geralmente não precisa) fechá-los com
-  />(por exemplo, <br />).
+  `/>`(por exemplo, `<br />`).
 
 Exemplo:
 
-<p>Este é um parágrafo de texto.</p>
+`<p>Este é um parágrafo de texto.</p>`
 
 Neste exemplo, `<p>` é a tag inicial, `</p>` é a tag final
 e `Este é um parágrafo de texto.` é o conteúdo.
+
+### Atributos
+
+Os elementos HTML também podem ter atributos,
+que fornecem informações adicionais sobre o
+elemento. Os atributos são especificados na tag
+inicial e consistem em um nome e um valor,
+separados por um sinal de igual (=). O valor
+geralmente é colocado entre aspas duplas.
+
+Exemplo:
+
+```
+<a href="https://www.example.com">Visit Example.com</a>
+<img src="image.jpg" alt="An example image">
+```
