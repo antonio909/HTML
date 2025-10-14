@@ -56,3 +56,49 @@ Exemplo:
 <a href="https://www.example.com">Visit Example.com</a>
 <img src="image.jpg" alt="An example image">
 ```
+
+* No primeiro exemplo, `href` é um atributo do
+  elemento `<a>` (anchor) que especifica a URL do
+  link.
+* No segundo exemplo, `src` é um atributo do
+  elemento `<img>` que especifica a origem da
+  imagem e `alt` fornece texto alternativo caso a
+  imagem não possa ser exibida.
+
+## A estrutura básica do HTML
+
+Todo documento HTML possui uma estrutura
+básica que inclui diversos elementos essenciais. Eles
+fornecem a base sobre a qual o restante da página
+web é construido.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+  <h1>This is a Heading</h1>
+  <p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+Vamos analisar cada parte:
+
+* `<!DOCTYPE html>`: Esta declaração define o tipo
+  de documento como HTML5. É importante
+  incluí-la para que os navegadores renderizem a
+  página corretamente. Esta *não* é uma tag
+  HTML em si.
+* `<html>`: O elemento raiz da página HTML.
+  Todos os outros elementos estão contidos
+  nesta tag.
+* `<head>`: Contém metainformações sobre o
+  documento HTML, como título, conjunto de
+  caracteres, links para folhas de estilos e scripts.
+  Essas informações geralmente não são exibidas
+  na página em si.
