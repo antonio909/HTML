@@ -5,9 +5,9 @@ Um nome de domínio é a parte principal do endereço de um site que
 endereço completo que aponta para um recurso específico. O
 domínio é como o nome da rua de uma casa, e a URL é o endereço
 completo, incluindo o número da casa e o nome do cômodo (caminho).
-Por exemplo, em "https://www.cloudflare.com/learning/",
+Por exemplo, em "`https://www.cloudflare.com/learning/`",
 "cloudflare.com" é o nome de domínio, e a URL completa é
-"https://www.cloudflare.com/learning/".
+"`https://www.cloudflare.com/learning/`".
 
 ## Nome de domínio
 
