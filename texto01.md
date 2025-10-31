@@ -1,35 +1,39 @@
-# O que é linguagem de marcação?
+# O que é uma linguagem de marcação?
 
-Uma linguagem de marcação é um sistema para descrever e
-apresentar dados, usando um conjunto de códigos ou "tags" que
-definem a estrutura, o tipo e a aparência do documento. Ela não é
-uma linguagem de programação e não tem estruturas de controle, mas
-permite que softwares interpretem o conteúdo para exibi-lo
-corretamente. Exemplos comuns incluem o HTML (para páginas web) e
-o XML (para intercâmbio de dados).
+Uma **linguagem de marcação** (ou *markup language*) é um sistema para anotar um documento
+de forma a descrever a sua **estrutura**, **formato** e/ou **apresentação**.
 
-## Como funciona
+Em vez de ser usada para executar ações ou algoritmos como uma linguagem de programação
+(como Python ou Java), uma linguagem de marcação utiliza **sinais** ou **códigos** (chamados de
+**tags**) aplicados ao texto para:
 
-* **Anotação:** As tags são inseridas no texto para adicionar
-  informações extras sobre ele, como um título, um parágrafo ou uma
-  lista.
+* **Estruturar o Conteúdo:** Define elementos como títulos, parágrafos, listas, tabelas, etc.
 
-* **Estrutura e apresentação:** Elas definem a estrutura (onde está o
-  título, onde está o corpo do texto) e a apresentação (como o texto
-  deve ser exibido, como a fonte, o tamanho, etc.).
+* **Formatar/Apresentar:** Indica como o conteúdo deve ser exibido (embora a parte de
+  apresentação seja muitas vezes complementada por outras tecnologias, como CSS).
 
-* **Legibilidade:** As marcações são legíveis tanto por humanos quanto
-  por programas de computador, pois o conteúdo original permanece
-  e é apenas "marcado" com as instruções.
+* **Adicionar Metadados:** Incorpora informações adicionais sobre o texto ou documento.
 
-## Exemplos de linguagens de marcação:
+O termo "marcação" vem das marcas de revisão que redatores costumavam usar em
+manuscritos e provas de impressão para indicar como o texto deveria ser formatado.
 
-* **HTML (HyperText Markup Language:** A mais famosa, usada
-  para criar a estrutura e o conteúdo de páginas na internet.
-  
-* **XML (eXtensible Markup Language):** Usada para armazenar e
-  transportar dados de forma estruturada, permitindo que diferentes
-  aplicações se comuniquem.
+## Exemplos Populares
 
-* **Markdown:** Uma linguagem de marcação leve com sintaxe de
-  formatação de texto simples.
+* **HTML (HyperText Markup Language):** A linguagem de marcação mais conhecida, usada
+  para **criar páginas da web**. Ela define a estrutura de uma página (cabeçalho, corpo, links,
+  imagens, etc.).
+
+  * *Exemplo de tag:* `<h1>Título Principal</h1>`
+
+* **XML (eXtensible Markup Language):** Usada para **armazenamento e transporte de
+  dados**. É "extensível" porque você pode definir suas próprias tags, focando na descrição
+  dos dados em si.
+
+* **Markdown:** Uma linguagem de marcação **leve** e simples, popular para a criação de
+  documentos estruturados (como este texto) em que a formatação é feita usando
+  caracteres simples.
+
+  * *Exemplo de marcação:* `# Título Principal`
+
+Em resumo, o objetivo principal de uma linguagem de marcação é **descrever o conteúdo** para
+que um software (como um navegador web) possa interpretá-lo e exibi-lo corretamente.
