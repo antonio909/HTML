@@ -1,85 +1,56 @@
-# Teoria - Linguagem de Marcação
+# Conceitos de Linguagens de Marcação
 
-A Teoria da Linguagem de Marcação explica como os símbolos e
-códigos são usados para anotar texto, definindo sua estrutura,
-formatação e a relação entre suas partes. A principal ideia é separar o
-conteúdo (o texto em si) da sua apresentação (como ele será exibido),
-permitindo que diferentes dispositivos e programas o interpretem e
-exibam de maneiras distintas.
+Uma **Linguagem de Marcação** (*Markup Language*) é um sistema para anotar um documento de
+forma a descrever sua **estrutura** e, em alguns casos, sua **apresentação**. Ela utiliza códigos,
+geralmente chamados de **tags** ou **marcas**, que são inseridas no texto ou dados para fornecer
+informações adicionais
 
-## Conceitos fundamentais
+1. **O que são Tags(Marcas)?**
 
-* **Conteúdo e marcação:** Um documento marcado é composto por
-  duas partes: o conteúdo que será exibido e a marcação (os "sinais
-  e códigos") que fornece instruções sobre a estrutura e a aparência
-  do conteúdo. A marcação é invisível para o usuário final, mas é
-  fundamental para o navegador ou outro software interpretar o
-  documento.
+As tags são os componentes essencias de uma linguagem de marcação. Elas servem para:
 
-* **Tags e elementos:** As tags são as instruções que "envolvem" o
-  conteúdo. Por exemplo, em HTML, a tag `<h1>` indica um título
-  principal. Um elemento é a combinação da tag (abertura e
-  fechamento) com o conteúdo que está entre elas.
+* **Delimitar** partes do documento (elementos).
 
-* **Declaração de documento:** Em muitas linguagens de marcação,
-  existe uma declaração inicial que especifica o tipo de documento,
-  permitindo que o processador saiba como interpretá-lo. 
+* **Fornecer metainformações** (dados sobre os dados).
 
-## Tipos de linguagem de marcação
+* **Definir formatação** e/ou **estilo** (dependendo do tipo de marcação).
 
-As linguagens de marcação podem ser categorizadas de acordo com
-seu propósito e forma de funcionamento: 
+**Exemplo Básico (em HTML):**
 
-* **Marcação de apresentação:** Incorpora marcações no texto para
-  definir a formatação visual, como a exibição de texto em negrito ou
-  itálico. É utilizada por processadores de texto.
+`<p>Este é um parágrafo.</p>`
 
-* **Marcação procedimental:** Fornece instruções para o
-  processamento do texto por um programa.
+* `**<p>**`: Tag de abertura, indica o início de um parágrafo.
 
-* **Marcação genérica (ou descritiva):** Descreve a estrutura e as
-  características de um documento de forma independente do
-  dispositivo, com foco na sua organização lógica. 
+* `**</p>**`: Tag de fechamento, indica o fim do parágrafo.
 
-## Principais linguagens de marcação
+* `**Este é um parágrafo.**`: O conteúdo do elemento.
 
-* **SGML (Standard Generalized Markup Language):** O padrão
-  original para a definição de linguagens de marcação. Ele
-  estabeleceu as bases para a criação do HTML e do XML,
-  permitindo a definição de gramáticas e regras para documentos
-  complexos. Foi a partir dele que surgiu a ideia de separar a
-  estrutura do conteúdo da sua apresentação.
+2. **Classificações da Marcação**
 
-* **HTML (HyperText Markup Language):** A linguagem de marcação
-  padrão para a criação de páginas web. Define a estrutura e o
-  conteúdo das páginas por meio de tags, que indicam ao navegador
-  como exibir elementos como títulos, parágrafos, imagens e links.
-  Atualmente, o HTML não é mais baseado em SGML, tendo suas
-  próprias regras.
+As linguagens de marcação podem ser categorizadas com base no propósito da marcação:
 
-* **XML (eXtensible Markup Language):** Uma linguagem de
-  marcação versátil e extensível, usada para armazenar e
-  transportar dados de forma estruturada. Ao contrário do HTML, o
-  XML não tem tags predefinidas; o usuário pode criar as suas
-  próprias para descrever o conteúdo de forma específica. É uma
-  metalinguagem, pois permite criar outras linguagens.
+| Tipo de Marcação | Objetivo Principal | Exemplos |
+|------------------|--------------------|----------|
+| **Descritiva** | Descrever a **estrutura** lógica e o significado das partes do documento, separando a estrutura do processamento. Foco no **"o que é"** (um título, um parágrafo, um produto, etc.). | **XML**, **SGML**, **HTML** (foco na estrutura) |
+| **Apresentação** | Incorporar marcas no texto para ditar sua **aparência** visual (negrito, itálico, tamanho da fonte). | Algumas tags descontinuadas do HTML. |
+| **Procedimental** | Fornecer **instruções** para que um programa processe o texto (como formatar, onde quebrar a página, etc.). | **Tex**, **troff**, **PostScript** |
 
-* **Markdown:** Uma linguagem de marcação leve que permite
-  formatar texto de forma simples e intuitiva, usando uma sintaxe de
-  fácil leitura e escrita. É frequentemente usada para documentação,
-  blogs e arquivos `README`.
+3. **Diferença Crucial: Marcação vs. Programação**
 
-* **MathML (Mathematical Markup Language):** Utilizada para exibir
-  equações e fórmulas matemáticas na web.
+É importante notar a diferença fundamental:
 
-* **SVG (Scalable Vector Graphics):** Uma linguagem baseada em
-  XML usada para descrever gráficos vetoriais bidimensionais, como
-  ícones e ilustrações. 
+| Linguagem de Marcação | Linguagem de Programação |
+|-----------------------|--------------------------|
+| Usada para **estruturar e formatar** dados/texto. | Usada para controlar o **comportamento** de máquinas e expressar **algoritmos**. |
+| **Não contém lógica** de programação (não faz cálculos, nem toma decisões. | Contém **lógica** (condicionais, laços, funções). |
+| **Exemplos:** HTML, XML, Markdown. | **Exemplos:** Python, Java, C++, JavaScript. |
 
-## Importância
+4. **Principais Linguagens de Marcação**
 
-As linguagens de marcação são cruciais porque permitem que os
-dados sejam estruturados de forma padronizada, o que facilita a
-leitura e o processamento por diferentes programas e plataformas.
-Essa padronização é a base da World Wide Web e de inúmeros
-sistemas de gerenciamento de dados e documentos. 
+| Linguagem | Nome Completo | Uso Principal | Característica Chave |
+|-----------|---------------|---------------|----------------------|
+| **SGML** | *Standard Generalized Markup Language* | Padrão precursor; serviu de base para HTML e XML. | Define um conjunto de regras para criar outras linguagens de marcação (metalinguagem). |
+| **HTML** | *HyperText Markup Language* | Criação de documentos e páginas web. | Possui um conjunto **predefinido** de tags. Define a estrutura e elementos em navegadores. |
+| **XML** | *eXtensible Markup Language* | Armazenamento e intercâmbio de dados. | É **extensível**; não tem tags predefinidas. O usuário define suas próprias tags. Foco na descrição dos dados. |
+| **XHTML** | *eXtensible HyperText Markup Language* | Combinação de HTML e XML (segue regras sintáticas mais rigorosas do XML). | Maior rigor sintático que o HTML 4 (atualmente menos utilizada que o HTML5). |
+| **Markdown** | (Sem nome completo) | Formatação de texto simples (readme, blogs, documentação). | É uma linguagem de **marcação leve**, mais fácil de ler e escrever. |
