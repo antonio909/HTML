@@ -1,33 +1,37 @@
 # O que é HTML?
 
-HTML (Linguagem de Marcação de Hipertexto) é a linguagem padrão
-para criar a estrutura e o conteúdo de páginas web. Ela utiliza
-"tags" para definir elementos como títulos, parágrafos, imagens e links,
-fornecendo a base para a exibição de informações em um navegador.
-O HTML não é uma linguagem de programação, mas sim de marcação,
-que define a estrutura do conteúdo, como o "esqueleto" de um
-site.
+HTML é a sigla para **HyperText Markup Language** (Linguagem de Marcação de Hipertexto)
+e é a **linguagem de marcação mais fundamental** e essencial para a construção de
+páginas web.
 
-## Como funciona o HTML
+## Em resumo:
 
-* **Estrutura:** O HTML organiza o conteúdo de uma página, definindo
-  quais partes são títulos, quais são parágrafos, quais são listas, etc.
+* **Bloco de Construção Básico:** É o "esqueleto" de qualquer página na internet.
 
-* **Tags:** É composto por "tags", que são instruções de marcação. Por
-  exemplo, `<p>` define um parágrafo e `<h1>` define um título
-  principal.
+* **Função:** Define o **significado e a estrutura** do conteúdo da web. Ele diz ao navegador
+  (como Chrome, Firefox, Edge) o que é um título, o que é um parágrafo, onde colocar uma
+  imagem, um link, uma lista, etc.
 
-* **Não é programação:** Por não ter funcionalidades dinâmicas, é
-  frequentemente usado em conjunto com outras linguagens como
-  CSS (para estilo visual) e JavaScript (para interatividade).
+* **Como Funciona:** Utiliza **"tags"** (marcadores) para envolver o conteúdo e dar a ele um
+  significado estrutural.
 
-## Para que serve HTML
+  * **Exemplo:** A tag `<h1>Título Principal</h1>` indica que o texto entre os marcadores é
+    o título de maior importância na página. A tag `<p>Isto é um parágrafo.</p>` indica um
+    bloco de texto como parágrafo.
 
-* **Desenvolvimento web:** É a base para criar e estruturar qualquer
-  página na web.
+* **Não é Linguagem de Programação:** É uma *linguagem de marcação*, pois não executa
+  lógica ou comandos dinâmicos, mas sim, estrutura e exibe dados.
 
-* **Navegação:** Permite a inclusão de links para navegar entre
-  diferentes páginas e sites.
+## HTML, CSS e JavaScript
 
-* **Documentação:** Pode ser usado para organizar e formatar
-  documentos online.
+O HTML geralmente trabalha em conjunto com outras duas tecnologias importantes:
+
+* **CSS (Cascading Style Sheets):** Responsável pela **aparência e apresentação** (o
+  "estilo") da página. Define cores, fontes, layouts, tamanhos e como o conteúdo deve ser
+  visualmente exibido.
+
+* **JavaScript:** Responsável pela **funcionalidade e comportamento** (a "interação") da
+  página. Permite criar elementos dinâmicos, manipular dados e responder às ações do
+  usuário.
+
+Se o HTML é o esqueleto, o CSS é a "pele" e o JavaSrcipt é o "sistema nervoso" da página web.
