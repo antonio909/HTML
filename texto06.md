@@ -29,4 +29,4 @@ O CSS trabalha em conjunto com o HTML:
 | **HTML**  | Estrutura o **conteúdo** da página (textos, links, imagens, títulos). | O **esqueleto** ou a fundação da casa. |
 | **CSS**   | Estiliza e define a **aparência** da estrutura HTML. | A **decoração** da casa (cores, móveis e design). |
 
-A separação entre conteúdo (HTML)
+A separação entre conteúdo (HTML) e estilo (CSS) torna o código mais organizado, flexível e fácil de manter.
