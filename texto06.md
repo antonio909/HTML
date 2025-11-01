@@ -1,34 +1,32 @@
-# O que é HTTP?
+# O que é CSS?
 
-HTTP (Protocolo de Transferência de Hipertexto) é o protocolo base
-da internet que define as regras para a comunicação entre clientes
-(como navegadores) e servidores, permitindo a transferência de
-informações e o carregamento de páginas da web. Ele funciona no
-modelo cliente-servidor, onde o cliente faz uma requisição e o servidor
-responde com os dados solicitados, como documentos HTML, por
-exemplo.
+**CSS** é a sigla para **Cascading Style Sheets**, que em português significa **Folhas de
+Estilo em Cascata**.
 
-* **Como funciona:** Quando você acessa um site, seu navegador
-  envia uma requisição HTTP para o servidor onde o site está
-  hospedado. O servidor, por sua vez, envia uma resposta HTTP de
-  volta, contendo os dados necessários para que o navegador possa
-  exibir a página.
+## O que é e Para que serve?
 
-* **Para que serve:** O HTTP é a espinha dorsal da comunicação na
-  internet, sendo usado para buscar e transferir recursos como
-  páginas HTML, imagens e outros arquivos para que você possa
-  visualizar e interagir com sites.
+* **O que é?** É uma **linguagem de estilo** usada para descrever a **apresentação**
+  de um documento escrito em uma linguagem de marcação, como o **HTML**.
 
-* **Evolução:** O protocolo evoluiu ao longo do tempo, com versões
-  mais recentes como o HTTP/2 e o HTTP/3 que trazem melhorias em
-  desempenho e segurança.
+* **Para que serve:** Ele é responsável por definir a **aparência visual** de uma
+  página web. É onde você controla?
 
-* **Segurança HTTPS:** A versão segura, chamada **HTTPS**, adiciona
-  uma camada de criptografia SSL/TLS à comunicação, protegendo
-  os dados confidenciais durante a transferência. É o protocolo
-  usado em sites que exigem login, transações bancárias e outras
-  informações sensíveis.
+  * **Cores:** Do texto, do fundo, etc.
 
-* **Origem:** Foi desenvolvido no início dos anos 90 por Tim Berners-
-  Lee, que também criou o HTML e o URL, para facilitar o
-  compartilhamento de informações na World Wide Web.
+  * **Fontes:** Tipo, tamanho e estilo da tipografia.
+
+  * **Layout:** Posição dos elementos, margens, preenchimento (padding), e a organização
+    geral da página (como usar grids ou flexbox).
+
+  * **Efeitos:** Animações, transições e interações visuais.
+
+## Relação com HTML
+
+O CSS trabalha em conjunto com o HTML:
+
+| Linguagem | Função | Metáfora |
+|-----------|--------|----------|
+| **HTML**  | Estrutura o **conteúdo** da página (textos, links, imagens, títulos). | O **esqueleto** ou a fundação da casa. |
+| **CSS**   | Estiliza e define a **aparência** da estrutura HTML. | A **decoração** da casa (cores, móveis e design). |
+
+A separação entre conteúdo (HTML)
