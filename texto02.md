@@ -1,56 +1,52 @@
-# Conceitos de Linguagens de Marcação
+# Linguagens de Marcação
 
-Uma **Linguagem de Marcação** (*Markup Language*) é um sistema para anotar um documento de
-forma a descrever sua **estrutura** e, em alguns casos, sua **apresentação**. Ela utiliza códigos,
-geralmente chamados de **tags** ou **marcas**, que são inseridas no texto ou dados para fornecer
-informações adicionais
+Uma linguagem de marcação é um sistema de anotação (ou "marcação") de um documento ou
+dado para descrever sua **estrutura** e, muitas vezes, sua **apresentação**.
 
-1. **O que são Tags(Marcas)?**
+Em termos simples, elas usam um conjunto de **sinais** ou **códigos**, chamados de **tags** (etiquetas),
+que são aplicados ao texto ou dado para definir o papel de cada elemento.
 
-As tags são os componentes essencias de uma linguagem de marcação. Elas servem para:
+## Principais Funções
 
-* **Delimitar** partes do documento (elementos).
+* **Estrutura:** Define a organização do conteúdo (ex: "isto é um título", "isto é um parágrafo",
+  "isto é uma lista").
 
-* **Fornecer metainformações** (dados sobre os dados).
+* **Aparência (ou semântica de apresentação):** Em algumas linguagens, define como o
+  conteúdo deve ser exibido (ex: negrito, link).
 
-* **Definir formatação** e/ou **estilo** (dependendo do tipo de marcação).
+## Como Funcionam?
 
-**Exemplo Básico (em HTML):**
+Elas funcionam através de **tags** (marcações) que envolvem o conteúdo para dar-lhe um
+significado específico.
 
-`<p>Este é um parágrafo.</p>`
+**Exemplo com HTML (a linguagem da web):**
 
-* `**<p>**`: Tag de abertura, indica o início de um parágrafo.
+```
+<h1>Isto é um Título Principal</h1>
+<p>Isto é um parágrafo de texto</p>
+```
 
-* `**</p>**`: Tag de fechamento, indica o fim do parágrafo.
+* A tag `<h1>` indica que o texto seguinte é um título de nível 1.
 
-* `**Este é um parágrafo.**`: O conteúdo do elemento.
+* A tag `<p>` indica que o texto seguinte é um parágrafo.
 
-2. **Classificações da Marcação**
+## Linguagens de Marcação vs. Linguagens de Programação
 
-As linguagens de marcação podem ser categorizadas com base no propósito da marcação:
+É importante notar que linguagens de marcação **não** são linguagens de programação.
 
-| Tipo de Marcação | Objetivo Principal | Exemplos |
-|------------------|--------------------|----------|
-| **Descritiva** | Descrever a **estrutura** lógica e o significado das partes do documento, separando a estrutura do processamento. Foco no **"o que é"** (um título, um parágrafo, um produto, etc.). | **XML**, **SGML**, **HTML** (foco na estrutura) |
-| **Apresentação** | Incorporar marcas no texto para ditar sua **aparência** visual (negrito, itálico, tamanho da fonte). | Algumas tags descontinuadas do HTML. |
-| **Procedimental** | Fornecer **instruções** para que um programa processe o texto (como formatar, onde quebrar a página, etc.). | **Tex**, **troff**, **PostScript** |
+| Característica | Linguagem de Marcação | Linguagem de Programação |
+|----------------|-----------------------|--------------------------|
+| **Objetivo**   | Estruturar e formatar dados ou documentos. | Controlar o comportamento de uma máquina, executar lógica. |
+| **Lógica**     | Não contém lógica de programação (não faz cálculos ou decisões). | Contém lógica (permite algoritmos, condições, loops). |
+| **Exemplos**   | HTML, XML, Markdown | Python, Java, C++ |
 
-3. **Diferença Crucial: Marcação vs. Programação**
+## Exemplos Comuns
 
-É importante notar a diferença fundamental:
+* **HTML (HyperText Markup Language):** A linguagem fundamental para construir páginas
+  da web. É usada para estruturar o conteúdo.
 
-| Linguagem de Marcação | Linguagem de Programação |
-|-----------------------|--------------------------|
-| Usada para **estruturar e formatar** dados/texto. | Usada para controlar o **comportamento** de máquinas e expressar **algoritmos**. |
-| **Não contém lógica** de programação (não faz cálculos, nem toma decisões. | Contém **lógica** (condicionais, laços, funções). |
-| **Exemplos:** HTML, XML, Markdown. | **Exemplos:** Python, Java, C++, JavaScript. |
+* **XML (eXtensible Markup Language):** Usada para armazenamento e transporte de dados,
+  focando na descrição e não na apresentação.
 
-4. **Principais Linguagens de Marcação**
-
-| Linguagem | Nome Completo | Uso Principal | Característica Chave |
-|-----------|---------------|---------------|----------------------|
-| **SGML** | *Standard Generalized Markup Language* | Padrão precursor; serviu de base para HTML e XML. | Define um conjunto de regras para criar outras linguagens de marcação (metalinguagem). |
-| **HTML** | *HyperText Markup Language* | Criação de documentos e páginas web. | Possui um conjunto **predefinido** de tags. Define a estrutura e elementos em navegadores. |
-| **XML** | *eXtensible Markup Language* | Armazenamento e intercâmbio de dados. | É **extensível**; não tem tags predefinidas. O usuário define suas próprias tags. Foco na descrição dos dados. |
-| **XHTML** | *eXtensible HyperText Markup Language* | Combinação de HTML e XML (segue regras sintáticas mais rigorosas do XML). | Maior rigor sintático que o HTML 4 (atualmente menos utilizada que o HTML5). |
-| **Markdown** | (Sem nome completo) | Formatação de texto simples (readme, blogs, documentação). | É uma linguagem de **marcação leve**, mais fácil de ler e escrever. |
+* **Markdown:** Uma linguagem de marcação leve simples, popular para criar documentos
+  estruturados com formatação mínima (muito usada em blogs e READMEs).
