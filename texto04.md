@@ -1,93 +1,55 @@
-# Visão Geral Completa do Desenvolvimento Web Frontend
+# Desenvolvimento Frontend - HTML
 
-O desenvolvimento web frontend é a área da programação por tudo o que o **usuário
-vê e interage** diretamente em um website ou aplicação web. É a "fachada" da aplicação, focada
-na **interface do usuário (UI)** e na **experiência do usuário (UX)**.
+O **HTML** (HyperText Markup Language - Linguagem de Marcação de Hipertexto) é o **bloco de
+construção mais fundamental da Web**.
 
-1. **O que é Frontend?**
+Ele é essencial no Desenvolvimento Frontend, pois:
 
-O desenvolvedor frontend constrói a **ponte** entre o design visual (criado pelo designer) e a
-funcionalidade do sistema (que se comunica com o backend), garantindo que a interface seja:
+* **Define a Estrutura:** O HTML é responsável por dar **significado e estrutura** ao conteúdo de
+  uma página web. É como "esqueleto" do site.
 
-* **Atraente:** Com design agradável.
+* **Utiliza Marcações (Tags):** A estrutura é criada através de **tags** (como `<h1>` para um título
+  principal, `<p>` para um parágrafo, `<img>` para uma imagem), que orientam o navegador
+  sobre como exibir as informações.
 
-* **Intuitiva:** Fácil de usar e navegar.
+* **Base para Outras Tecnologias:**
 
-* **Rápida:** Com carregamento e desempenho eficientes.
+  * Sozinho, o HTML cria páginas estáticas.
 
-* **Responsiva:** Adaptável a diferentes tamanhos de tela (desktop, tablet e mobile).
+  * Ele trabalha em conjunto com o **CSS** (Cascading Style Sheets) para definir a
+    **aparência/estilo** (cores, layout, fontes).
 
-2. **A Tríade Fundamental (As Bases)**
+  * E com o **JavaScript** para adicionar **funcionalidade/interatividade** (comportamento
+    dinâmico).
 
-Três tecnologias são a espinha dorsal de qualquer projeto frontend:
+## Estrutura Básica de um Documento HTML
 
-| Tecnologia | Função Principal | Descrição |
-|------------|------------------|-----------|
-| **HTML** (Hypertext Markup Language) | **Estrutura** | Linguagem de marcação que define o **conteúdo** e a **estrutura** da página (textos, imagens, links, formulários, etc.). |
-| **CSS** (Cascading Style Sheets) | **Estilo** | Linguagem de folha de estilos que define a **aparência** da página (cores, fontes, layout, espaçamento, animações, etc.). |
-| **JavaScript (JS)** | **Comportamento/Interatividade** | Linguagem de programação que adiciona **dinamismo** e **interatividade** à página (reagindo a cliques, validando formulários, fazendo requisições, etc.). |
+Um documento HTML básico geralmente segue esta estrutura:
 
-3. **Ferramentas e Ecossistema**
+```
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título da Minha Página</title>
+</head>
+<body>
+  <h1>Meu Título Principal</h1>
+  <p>Este é um parágrafo de exemplo.</p>
+  <a href="outra_pagina.html">Link para Outra Página</a>
+</body>
+</html>
+```
 
-Com o tempo, o desenvolvimento frontend evoluiu muito, e a Tríade é frequentemente
-complementada por ferramentas que aumentam a produtividade e a capacidade de criar
-aplicações complexas:
+## Principais Conceitos
 
-**A. Frameworks e Bibliotecas JavaScript**
+* **Tags e Elementos:** Tags definem o início e fim de um elemento (`<p>` e `</p>`). O elemento é
+  todo o conteúdo entre as tags, incluindo as tags em si.
 
-Eles fornecem padrões, componentes prontos e funcionalidades que facilitam a criação de
-aplicações complexas e de página única (Single Page Applications - SPAs).
+* **Atributos:** Fornecem informações adicionais sobre o elemento. Por exemplo, o atributo
+  `href` na tag `<a>` especifica o destino do link.
 
-* **React:** Biblioteca mantida pelo Facebook/Meta, muito popular para construir interfaces de
-  usuário baseadas em componentes.
-
-* **Angular:** Framework completo, mantido pelo Google, que segue a arquitetura MVC (Model-
-  View-Controller).
-
-* **Vue.js:** Framework progressivo, leve e focado na facilidade de uso e integração.
-
-**B. Pré-processadores CSS**
-
-Estendem o CSS com recursos de programação (variáveis, aninhamento, funções) para torná-lo
-mais eficiente e organizado.
-
-* **Sass (Syntactically Awesome Style Sheets)**
-
-* **LESS**
-
-**C. Ferramentas de Build e Bundlers**
-
-Utilizados para automatizar tarefas repetitivas, otimizar o código (minificação, compressão) e
-agrupar múltiplos arquivos de código em um ou poucos arquivos prontos para produção.
-
-* **Webpack**
-
-* **Vite**
-
-* **Parcel**
-
-**D. Sistemas de Controle de Versão**
-
-Essencial para gerenciar o histórico de alterações do código e permitir o trabalho em equipe.
-
-* **Git** (sendo o **GitHub** e **GitLab** as plataformas mais comuns para hospedagem).
-
-4. **Conceitos Chave**
-
-Para ser um desenvolvedor frontend completo, é importante dominar os seguintes conceitos:
-
-* **Responsividade (Design Responsivo):** Garantir que a interface se adapte a qualquer
-  tamanho de tela, muitas vezes utilizando a abordagem **Mobile-First** (projetar primeiro para
-  telas menores).
-
-* **Experiência do Usuário (UX):** Entender como os usuários interagem com a aplicação para
-  criar fluxos intuitivos e agradáveis.
-
-* **Performance:** Otimizar o código e os ativos (imagens, fontes) para garantir um
-  carregamento rápido da página.
-
-* **Acessibilidade:** Desenvolver interfaces que possam ser usadas por pessoas com
-  deficiência (ex: leitores de tela).
-
-* **Consumo de APIs:** Fazer requisições HTTP (como `GET`, `POST`) para se comunicar com o
-  **backend** e buscar/enviar dados (geralmente em formato JSON).
+* **HTML5:** É a versão mais recente e amplamente utilizada. Ela introduziu novas tags
+  **semânticas** (como `<header>`, `<nav>`, `<article>`, `<footer>`) que dão mais significado ao
+  conteúdo, além de suporte nativo a multimídia (vídeo e áudio).
