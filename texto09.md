@@ -1,38 +1,42 @@
-# O que é um nome de domínio?
+# Nome de Domínio
 
-Um nome de domínio é um endereço na internet que serve para
-identificar e localizar sites, e-mails e outros recursos online de forma
-fácil de lembrar. Ele substitui endereços IP complexos (uma série de
-números) por um nome mais intuitivo, como `exemplo.com.br`,
-funcionando como um rótulo para o endereço numérico real na
-rede.
+O termo **Nome de Domínio** (ou simplesmente **Domínio**) é fundamental na internet.
 
-## Como funciona
+Em poucas palavras, é o **endereço exclusivo e fácil de lembrar** que as pessoas usam para
+acessar um site ou serviço online.
 
-* **Identificação:** É o nome que você digita na barra de navegação
-  para acessar um site ou o nome que aparece após o "`@`" em um
-  endereço de e-mail.
+## O que é um Nome de Domínio?
 
-* **Tradução:** Quando você digita um nome de domínio, o Sistema de
-  Nomes de Domínio (DNS) o traduz para o endereço IP numérico
-  correspondente, permitindo que seu navegador encontre e se
-  conecte ao servidor correto.
+* É o **nome de um site** que você digita no navegador (por exemplo, `google.com`,
+  `wikipedia.org`, ou `meusite.com.br`).
 
-* **Componentes:** Geralmente é composto por um nome (como
-  `google` ou `exemplo`) e uma extensão, também chamada de sufixo
-  de domínio, como `.com`, `.org` ou `.br`.
+* Ele serve para **identificar e localizar** computadores ou serviços na Internet.
 
-## Importância
+* O objetivo principal é substituir os **endereços IP** numéricos (como `192.0.2.1`), que são
+  difíceis para os humanos memorizarem. O Sistema de Nomes de Domínio (DNS) faz a
+  "tradução" do nome legível para o endereço IP.
 
-* **Memorização:** Torna a internet mais acessível ao permitir que as
-  pessoas se lembrem de nomes em vez de sequências de
-  números.
+## Estrutura Típica
 
-* **Identidade e marca:** É um componente fundamental da identidade
-  digital, ajudando na criação e reconhecimento da marca online.
+Um nome de domínio é geralmente composto por duas partes principais:
 
-* **Credibilidade:** Um nome de domínio único e bem escolhido pode
-  aumentar a credibilidade de um site ou negócio.
+1. **Domínio de Segundo Nível (SLD):** É o nome escolhido, que geralmente representa a marca
+   ou o produto (ex: `google` em `google.com`).
 
-* **Evita a concorrência:** Registrar um nome domínio para sua
-  marca evita que concorrentes o utilizem.
+2. **Domínio de Nível Superior (TLD) ou extensão:** É a parte final, com `.com`, `.org`, `.net`,
+   ou um código de país como `.br` (ex: `.com` em `google.com`).
+
+## Diferença entre Domínio e URL
+
+* **Domínio:** É o nome principal do site (ex: `meusite.com.br`). Pense nele como o **endereço de
+  uma casa**.
+
+* **URL (Uniform Resource Locator):** É o endereço **completo** que leva a uma página
+  específica dentro do site (ex: `https://www.meusite.com.br/contato`). Seria o **caminho
+  completo** para uma sala específica dentro da casa.
+
+## Como Obter um Domínio
+
+Qualquer pessoa ou empresa pode registrar um domínio através de um **Registrador de
+Domínios** (como GoDaddy, Registro.br, Cloudflare, etc.), pagando uma taxa anual para se tornar
+seu proprietário.
