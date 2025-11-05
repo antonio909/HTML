@@ -1,53 +1,47 @@
-# Nomes de domínio explicados
+# DNS
 
-Um nome de domínio é o endereço fácil de lembrar que as pessoas
-usam para acessar um site, como "google.com". Ele funciona como
-uma "etiqueta" amigável que substitui o complexo endereço IP
-numérico de um servidor. Quando você digita um domínio, o sistema
-DNS (Sistema de Nomes de Domínio) o traduz para o endereço IP
-correto, direcionando seu navegador ao servidor que hospeda o
-site.
+O DNS, ou **Sistema de Nomes de Domínio**, é essencialmente a **"lista telefônica" da internet**.
 
-## Como funciona
+* **O que ele faz?** Ele traduz nomes de domínio legíveis por humanos (como `www.exemplo.com`)
+  em **endereços IP** legíveis por máquina (como `192.0.2.44`). Os computadores e servidores
+  na internet usam endereços IP para se localizar e se comunicar, mas para as pessoas, é
+  muito mais fácil memorizar nomes.
 
-* **Mapeamento de endereço:** Um nome de domínio é um nome
-  legível por humanos que aponta para um endereço IP numérico, o
-  qual é o verdadeiro endereço do servidor.
+* **Por que é necessário?** Se não fosse pelo DNS, você teria que digitar o endereço IP de um
+  site toda vez que quisesse visitá-lo. O DNS automatiza esse processo de conversão.
 
-* **Busca de DNS:** Quando você digita um nome de domínio, seu
-  navegador consulta a rede global de servidores DNS para
-  encontrar o endereço IP correspondente.
+## Como o DNS Funciona (o Processo de Resolução)
 
-* **Redirecionamento:** O sistema DNS, então, direciona seu
-  navegador para o servidor correto, exibindo o site para você.
+Quando você digita um nome de domínio no seu navegador, ocorre uma série de consultas:
 
-## Partes de um nome de domínio
+1. **Consulta Inicial:** Seu computador envia uma solicitação (consulta) para um **Resolvedor
+   Recursivo de DNS** (geralmente fornecido pelo seu Provedor de Serviços de Internet - ISP,
+   ou um serviço público como o DNS do Google 8.8.8.8).
 
-* **Exemplo:** `exemplo.com`
+2. **Servidor Raiz:** Se o resolvedor não tiver a resposta em cache, ele consulta um **Servidor
+   Raiz** (o topo da hierarquia do DNS). O Servidor Raiz direciona o resolvedor para o servidor
+   de **Domínio de Nível Superior (TLD)** apropriado (por exemplo, o servidor responsável por
+   todos os endereços `.com`).
 
-* **Subdomínio (opcional):** `www` (ou outro) antes do nome principal
+3. **Servidor TLD:** O servidor TLD direciona o resolvedor para o **Servidor de Nomes
+   Autoritativo** para aquele domínio específico (por exemplo, `exemplo.com`).
 
-* **Nome principal:** `exemplo`
+4. **Servidor Autoritativo:** O Servidor Autoritativo contém o **registro DNS real** (como o registro
+   'A') para o domínio e retorna o **endereço IP** do servidor web para o resolvedor recursivo.
 
-* **Domínio de nível superior (TLD):** `.com` (ou outros, como `.org`,
-  `.net`, `.br`)
+5. **Resposta:** O resolvedor recursivo envia o endereço IP de volta para o seu computador.
 
-## Tipos comuns de TLDs
+6. **Conexão:** Seu navegador agora usa o endereço IP para se conectar ao servidor web e
+   carregar a página.
 
-* **gTLDs (Domínios de Nível Superior Genéricos):** Usados
-  globalmente e não associados a um país. Exemplos incluem `.com`,
-  ´.org´, `.net`, `.store`.
+## Tipos de Servidores DNS
 
-* **ccTLDs (Domínios de Nível Superior de Código de País):** Usados
-  para identificar a localização geográfica de uma entidade.
-  Exemplos incluem `.br` para o Brasil e `.ca` para o Canadá.
+O Sistema DNS é distribuído e hierárquico, utilizando vários tipos de servidores para gerenciar e
+responder às consultas:
 
-## Dicas para escolher um nome
-
-* Escolha um nome que seja fácil de lembrar, digitar e soletrar.
-
-* Mantenha-o curto e simples, evitando hifens ou números que
-  possam causar confusão.
-
-* Seja o mais relevante possível para sua marca, negócio ou
-  propósito.
+| Tipo de Servidor | Função Principal |
+|------------------|------------------|
+| **Resolvedor Recursivo** | Recebe a consulta do usuário e faz as solicitações necessárias para encontrar o endereço IP, funcionando como um intermediário. |
+| **Servidor Raiz** | O topo da hierarquia, direciona as consultas para o Servidor TLD correto. |
+| **Servidor TLD** | Gerencia informações para domínios de nível superior (´.com´, ´.org´, ´.br´, etc.), direcionando para o Servidor Autoritativo. |
+| **Servidor Autoritativo** | Contém a informação definitiva (os registros) para um domínio específico, fornecendo o endereço IP final. |
