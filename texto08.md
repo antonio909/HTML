@@ -1,74 +1,34 @@
-# HTTP/3 agora é um padrão: por que usá-lo e como começar
+# O que é HTTP?
 
-O HTTP/3 se tornou um padrão em 2021, trazendo uma evolução
-significativa na forma como a internet funciona. Ele é baseado em um
-protocolo de transporte mais moderno, o QUIC, para oferecer melhor
-desempenho, segurança e menor latência.
+O **HTTP** é a sigla para **HyperText Transfer Protocol**, que em português significa **Protocolo de
+Transferência de Hipertexto**.
 
-## Por que usar o HTTP/3?
+É a **base da comunicação de dados na World Wide Web (WWW)**, ou seja, é o protocolo
+fundamental que permite que você acesse websites e visualize informações na internet.
 
-1. **Desempenho e velocidade**
+Aqui estão os pontos-chave sobre o HTTP:
 
-   * **Baseado em QUIC:** Diferentemente das versões anteriores
-     (baseadas em TCP), o HTTP/3 utiliza o protocolo QUIC, que usa o
-     UDP como base. Isso permite um estabelecimento de conexão mais
-     rápido e uma experiência de navegação mais fluida.
+* **O que faz:** Define como as mensagens são formatadas e transmitidas, e o que servidores
+  web e navegadores (clientes) devem fazer em resposta a vários comandos.
 
-   * **Correção de erros sem atrasos:** Com o QUIC, a perda de pacotes
-     (dados) não bloqueia a entrega dos pacotes seguintes. Isso elimina
-     o problema de "head-of-line blocking" que afeta o HTTP/2,
-     resultando em carregamentos mais rápidos, especialmente em
-     conexões instáveis.
+* **Modelo de Comunicação:** Opera em um **modelo cliente-servidor**.
 
-   * **Conexões persistentes:** Ao alternar entre redes (como Wi-Fi e
-     dados móveis), o HTTP/3 mantém a conexão ativa, evitando o atraso
-     de reconexão. Isso é ideal para usuários em movimento.
+  * O **Cliente** (geralmente seu navegador) envia uma **requisição** HTTP para obter um
+    recurso (como uma página web, imagem, ou arquivo).
 
-2. **Segurança aprimorada**
+  * O **Servidor** web processa a requisição e envia uma **resposta** HTTP de volta.
 
-   * **Criptografia por padrão:** O HTTP/3 oferece criptografia obrigatória
-     e automática no nível de transporte. Isso significa que todo o tráfego
-     é criptografado por padrão, melhorando a segurança de dados
-     sensíveis para todos os usuários.
+* **Hipertexto:** O "Hipertexto" no nome se refere ao texto estruturado com ligações lógicas
+  (hyperlinks) entre nós de texto, o que é a base da web. O HTTP é usado para transferir esse
+  hipertexto.
 
-3. **Latência reduzida**
+* **Camada de Aplicação:** O HTTP pertence à camada de aplicação da pilha de protocolos de
+  rede.
 
-   * **Handshake mais rápido:** O QUIC realiza o handshake de
-     segurança (a etapa de negociação inicial) de forma mais eficiente, o
-     que reduz a latência e o tempo de carregamento da página.
+* **HTTP vs. HTTPS:** O HTTP, por si só, não é criptografado. Uma versão mais segura, chamada
+  **HTTPS (Hypertext Transfer Protocol Secure)**, é amplamente utilizada hoje. O HTTPS
+  adiciona uma camada de criptografia (SSL/TLS), para proteger os dados transmitidos,
+  sendo essencial para transações sensíveis como logins ou compras.
 
-## Como começar a usar o HTTP/3?
-
-### Para desenvolvedores e proprietários de sites
-
-* **Verifique o suporte do seu servidor:** Muitos servidores web
-  modernos, como o NGINX e o Apache, já oferecem suporte ao
-  HTTP/3. Verifique a documentação do seu servidor para ver se o
-  recurso está disponível e como ativá-lo.
-
-* **Use uma CDN:** Se você utiliza um Rede de Entrega de Conteúdo
-  (CDN) como a Cloudflare, Akamai ou Fastly, a ativação do HTTP/3
-  pode ser tão simples quanto marcar uma caixa nas configurações do
-  serviço.
-
-* **Mantenha seu software atualizado:** Para aproveitar os benefícios
-  do HTTP/3, certifique-se de que seu software de servidor e
-  bibliotecas estejam atualizados.
-
-* **Implemente no código:** Para desenvolvedores, bibliotecas como a
-  `HttpClient` no .NET Core já suportam HTTP/3.
-
-### Para usuários finais
-
-* **Atualize seu navegador:** A maioria dos navegadores modernos já
-  suportam o HTTP/3 por padrão. Manter o seu navegador (Chrome,
-  Firefox, Edge, etc.) atualizado garante que você esteja utilizando o
-  protocolo mais recente.
-
-* **Navegue na web:** Ao usar um navegador atualizado, você já está
-  aproveitando os benefícios do HTTP/3, pois os servidores mais
-  modernos já o utilizam.
-
-O HTTP/3 é um passo importante para uma internet mais rápida e
-segura, e a sua adoção crescente por grandes empresas como Google e
-Meta demonstra sua eficácia.
+Em resumo, o **HTTP** é o conjunto de regras que o seu navegador e o servidor de um site usam
+para "conversar" e transferir os dados que formam a página que você está vendo.
