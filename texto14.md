@@ -1,92 +1,98 @@
-# Onde hospedar um projeto fullstack com orçamento limitado
+# HTML - Tags e Atributos
 
-Para hospedar um projeto fullstack com orçamento limitado, as
-melhores opções são plataformas que oferecem planos gratuitos ou de
-baixo custo. A escolha ideal dependerá das necessidades específicas
-do projeto, como o tipo de frontend e backend.
+O HTML (HyperText Markup Language) é a espinha dorsal de qualquer página web. Ele é
+baseado em dois conceitos principais para estruturar o conteúdo: **Tags** e **Atributos**.
 
-## Plataformas com planos gratuitos
+## Tags HTML (Marcações)
 
-Para projetos menores, pessoais ou de portfólio, as seguintes
-plataformas oferecem planos gratuitos generosos:
+* **O que são:** As tags são as palavras-chave que definem o tipo de conteúdo na página
+  (parágrafos, títulos, links, imagens, etc.). Elas são a base para a criação dos **Elementos**
+  HTML.
 
-* **Vercel e Netlify:** Ideais para hospedar o frontend (aplicações
-  estáticas, Next.js, React, entre outros) e funções serveless.
+* **Sintaxe:** Uma tag de abertura começa com `<` e termina com `>`. Se houver conteúdo, ela é
+  seguida por uma tag de fechamento, que adiciona uma barra `/` antes do nome da tag.
 
-  * **Vercel:** Popular entre desenvolvedores de Next.js, com
-    integração nativa.
+  * **Com Fechamento:** `<p>Este é um parágrafo.</p>`
 
-  * **Netlify:** Oferece limites generosos de largura de banda e
-    ferramentas para construção e implantação.
+  * **Sem Fechamento (Self-closing):** Tags que não contém conteúdo, como `<br>` (quebra
+    de linha) e `<img>` (imagem).
 
-* **Render:** É uma alternativa popular e robusta para substituir o
-  Heroku, oferecendo hospedagem gratuita para diversos tipos de
-  aplicações, incluindo bancos de dados.
+* **Exemplos Comuns:**
 
-* **Firebase:** Plataforma do Google que oferece um plano gratuito com
-  diversas ferramentas para backend (banco de dados,
-  autenticação, armazenamento) e também hospedagem para o
-  frontend.
+  * **Estrutura:** `<html>`, `<heady>`, `<body>`
 
-* **Supabase:** Alternativa de código aberto ao Firebase que também
-  conta com um plano gratuito. Fornece banco de dados,
-  autenticação e armazenamento.
+  * **Conteúdo:** `<h1>` a `<h6>` (Títulos), `<p>` (Parágrafo), `<a>` (Link), `<img>` (Imagem),
+    ´<ul>´ e `<ol>` (Listas)
 
-* **Railway:** Oferece uma opção de hospedagem confiável e fácil de
-  usar, com integração com o GitHub para automatizar a
-  implantação.
+  * **Divisão:** `<div>`, `<span>` (Usadas para agrupar e estilizar)
 
-* **Coolify:** Uma alternativa gratuita e de código aberto para
-  hospedar contêineres e aplicações em seu próprio servidor, como
-  se fosse um Heroku ou Vercel.
+## Atributos HTML
 
-## Plataformas de baixo custo
+* **O que são:** Os atributos fornecem **informações adicionais** ou **instruções** sobre um
+  elemento HTML. Eles modificam o comportamento, a aparência ou a funcionalidade padrão
+  da tag.
 
-Quando o plano gratuito não é mais suficiente, essas plataformas
-oferecem preços acessíveis e são boas para projetos em
-crescimento:
+* **Sintaxe:** Um atributo é sempre definido na **tag de abertura** e possui a estrutura:
+  `nome="valor"`.
 
-* **Hostinger:** Reconhecida pelo ótimo custo-benefício, com preços
-  introdutórios muito baixos para hospedagem compartilhada, que
-  pode ser uma opção para projetos pequenos.
+  * **Exemplo:** `<a href="https://www.google.com" target="_blank">Google</a>`
 
-* **DigitalOcean:** Oferece serviços de infraestrutura em nuvem (IaaS)
-  com preços mais acessíveis do que as grandes provedoras (AWS,
-  Azure). É ideal para projetos que precisam de mais flexibilidade e
-  controle.
+    * `href` e `target` são os **nomes** dos atributos.
 
-* **AWS:** Possui um nível gratuito para várias ferramentas, como o S3
-  para arquivos estáticos e o DynamoDB, que pode ser explorado
-  para construir um projeto fullstack sem custos iniciais. No entanto,
-  é mais complexo para iniciantes.
+    * `"https://www.google.com"` e `"_blank"` são os **valores** dos atributos.
 
-## Como combinar as plataformas
+  * **Tipos de Atributos:**
 
-Para projetos com orçamento limitado, uma abordagem comum é
-combinar plataformas gratuitas para cada parte da aplicação:
+    * **Globais:** Podem ser usados em *qualquer* tag HTML. Os mais importantes são:
 
-* **Backend (API):** Utilize plataformas como **Render** (para Node.js,
-  Python, etc.) ou **Firebase** e **Supabase** (para backend como
-  serviço).
+      * `class`: Usado para agrupar elementos e aplicar estilos com CSS ou manipular com
+        JavaScript.
 
-* **Frontend (interface):** Hospede em **Vercel** ou **Netlify**, que são
-  otimizadas para aplicações estáticas e dinâmicas do lado do
-  cliente.
+      * `id`: Usado para **identificar de forma única** um elemento na página (útil para links
+        internos ou JavaScript).
 
-* **Banco de dados:** Use o banco de dados oferecido por
-  plataformas como **Supabase** ou **Firebase**, ou o serviço de banco
-  de dados gratuito do **Render**.
+      * `style`: Permite aplicar estilos CSS diretamente no elemento.
 
-## Dicas extras
+      * `lang`: Específica o idioma do conteúdo do elemento.
 
-* **Repositório de código:** Utilize o GitHub para gerenciar seu
-  código-fonte, pois a maioria dessas plataformas se integra
-  facilmente a ele para automatizar a implantação.
+    * **Específicos:** Funcionam apenas em tags específicas.
 
-* **Containerização:** Para projetos mais complexos, use Docker.
-  Plataformas como o Render e o Coolify têm ótimo suporte a
-  contêineres.
+      * `src`: Usado em `<img>`, `<script>` ou `<video>` para indicar a origem do arquivo.
 
-* **Documentação:** Consulte a documentação das plataformas para
-  entender os limites de cada plano gratuito e as melhores práticas
-  para otimizar o uso.
+      * `href`: Usado na tag `<a>` para indicar o URL de destino do link.
+
+      * `alt`: Usado em `<img>` para fornecer um texto alternativo caso a imagem não
+        carregue (importante para acessibilidade e SEO).
+
+      * `type`: Usado em `<input>` para definir o tipo do campo (texto, senha, botão, etc.).
+
+## Exemplo Prático de Tags e Atributos:
+
+```
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Minha Página HTML</title>
+</head>
+<body>
+  <h1 id="titulo-principal">Título da Página</h1>
+
+  <p class="introducao">
+    Este é um parágrafo com um <a href="pagina2.html" target="_self">link para outra página</a>.
+  </p>
+
+  <img src="imagem.jpg" alt="Descrição da Imagem" width="300">
+</body>
+</html>
+```
+
+| Componente | Tipo | Explicação |
+|------------|------|------------|
+| `<h1>` | Tag | Define um título de nível 1. |
+| `id` | Atributo Global | Identificador único para o `<h1>`. |
+| `lang` | Atributo Global | Define o idioma do documento (`<html>`). |
+| `<p>` | Tag | Define um parágrafo de texto. |
+| `class` | Atributo Global | Usado para aplicar estilo CSS ao parágrafo. |
+| `href` | Atributo Específico | Define o destino do link (`<a>`). |
+| `src` | Atributo Específico | Define a origem (URL) da imagem (`<img>`). |
+| `alt` | Atributo Específico | Texto alternativo para a imagem (`<img>`). |
