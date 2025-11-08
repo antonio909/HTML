@@ -1,36 +1,16 @@
-# Mexa com DNS - DNS Playground
+# HTML - Entities
 
-O **Mess With DNS** é um playground online para experimentar o DNS
-(Sistema de Nomes de Domínio). Ele permite que você aprenda como o
-DNS funciona na prática.
+As **HTML Entities** (Entidades HTML) são sequências de caracteres usadas para representar
+**símbolos especiais** em documentos HTML. Elas são esseciais por duas razões principais:
 
-# O que é Mess With DNS?
+## Propósito das Entidades HTML
 
-* **Ambiente seguro:** Ele oferece um ambiente seguro onde você
-  pode fazer experimentos, ver os resultados e modificar sem afetar
-  domínios reais ou a rede.
+* **Exibir Caracteres Reservados:** Permitem exibir caracteres que possuem um **significado
+  especial** em HTML, como o sinal de "menor que" (`<`) ou o "e comercial" (`&`), que são
+  usados para definir tags e as próprias entidades, respectivamente.
 
-* **Aprendizagem prática:** A ferramenta foi criada por Julia Evans
-  com o objetivo de tornar o aprendizado de DNS mais prático,
-  oferecendo exemplos de experimentos para começar.
+* **Exibir Caracteres Não Presentes no Teclado: Possibilitam a inclusão de símbolos que não
+  são facilmente digitáveis (como sinais de moeda, caracteres diacríticos complexos, ou
+  símbolos matemáticos) ou que historicamente causavam problemas de codificação.
 
-* **Recursos:** Os experimentos geralmente envolvem a configuração
-  de diferentes tipos de registros DNS (como A, CNAME, TXT) e a
-  visualização dos resultados.
-
-# Como usar o Mess With DNS
-
-1. **Acesse o site:** Entre no site oficial do projeto em [messwithdns.net](https://messwithdns.net).
-
-2. **Inicie a experimentação:** Clique no botão "Start experimenting"
-   para começar a usar a ferramenta.
-
-3. **Crie seu domínio de teste:** A plataforma gera um domínio de teste
-   único para você (por exemplo, `meu-teste.messwithdns.net`).
-  
-4. **Adicione registros:** Você pode adicionar, modificar e remover
-   diferentes tipos de registros DNS para seu domínio de teste.
-
-5. **Observe os resultados:** Use as ferramentas de consulta DNS
-   disponíveis no próprio site para ver como suas alterações se
-   propagam e afetam as resoluções.
+## Estrutura da Entidade
