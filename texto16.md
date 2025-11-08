@@ -41,12 +41,12 @@ que representam caracteres reservados:
 
 | Resultado | Descrição | Nome da Entidade | Código Numérico (Decimal) |
 |-----------|-----------|------------------|---------------------------|
-| **<** | Menor que (Less Than) | `&lt;` | `&#60;` |
-| **>** | Maior que (Greater Than) | `&gt;` | `&#62;` |
-| **&** | E Comercial (Ampersand) | `&amp;` | `&#38;` |
-| **"** | Aspas Duplas (Double Quote) | `&quot;` | `&#34;` |
-| **'** | Aspas Simples (Apostrophe) | `&apos;` | `&#39;` |
-|       | Espaço Não Separável (Non-breaking Space | `&nbsp;` | `&#160;` |
+| **<** | Menor que (*Less Than*) | `&lt;` | `&#60;` |
+| **>** | Maior que (*Greater Than*) | `&gt;` | `&#62;` |
+| **&** | E Comercial (*Ampersand*) | `&amp;` | `&#38;` |
+| **"** | Aspas Duplas (*Double Quote*) | `&quot;` | `&#34;` |
+| **'** | Aspas Simples (*Apostrophe*) | `&apos;` | `&#39;` |
+|       | Espaço Não Separável (*Non-breaking Space*) | `&nbsp;` | `&#160;` |
 
 O **Espaço Não Separável** (`&nbsp;`) é particularmente importante, pois o HTML
 normalmente ignora múltiplos espaços em branco consecutivos no código-fonte,
