@@ -1,65 +1,34 @@
-# Preenchendo a página: Como funcionam os navegadores
+## HTML - Whitespaces
 
-Quando você digita um endereço em um navegador, um processo
-complexo de renderização é acionado para exibir a página na sua tela.
-Esse processo, que envolve a comunicação com servidores e a
-construção visual dos elementos, acontece em várias etapas
-rápidas.
+Os **"Whitespaces"** (espaços em branco) em **HTML** referem-se a qualquer sequência de **espaços**, **tabulações** ou **quebras de linha** que são ignoradas ou colapsadas pelo navegador durante a renderização de uma página.
 
-## O fluxo de preenchimento da página
+## Comportamento Padrão do HTML
 
-1. **Requisição e DNS:** Tudo começa quando você digita a URL ou clica
-   em um link. O navegador envia uma requisição para o servidor DNS
-   (Domain Name System) a fim de encontrar o endereço de IP
-   correspondente ao nome do domínio (por exemplo,
-   `www.google.com`).
-   
-2. **Conexão e requisição HTTP:** Após encontrar o IP, o navegador
-   estabelece uma conexão com o servidor e envia uma requisição
-   HTTP para solicitar os arquivos da página, como HTML, CSS,
-   JavaScript, imagens e outros recursos.
+Por padrão, o HTML **colapsa** múltiplos espaços em branco (incluindo espaços, tabulações e quebras de linha no código) em um **único espaço** na exibição.
 
-3. **Análise e criação das árvores:** Ao receber os arquivos, o motor de
-   renderização do navegador inicia a análise dos dados.
+  * **Exemplo:**
+    ```html
+    <p> Este texto tem          muitos
+    espaços e
+    quebras de linha. </p>
+    ```
+  * **Resultado no Navegador:**
+    > Este texto tem muitos espaços e quebras de linha.
 
-   1. **Árvore DOM:** O HTML é convertido em uma estrutura de árvore
-      chamada Document Object Model (DOM), que representa a
-      estrutura e as relações entre os elementos.
+## Como Inserir Espaços Adicionais ou Preservar a Formatação
 
-   2. **Árvore CSSOM:** O CSS é analisado para criar o CSS Object
-      Model (CSSOM), que mapeia todas as regras de estilo.
+Se você precisa de mais de um espaço ou quer manter a formatação exata (incluindo quebras de linha e múltiplos espaços), existem algumas técnicas principais:
 
-4. **Criação da árvore de renderização:** A árvore DOM e a CSSOM são
-   combinadas para formar a árvore de renderização. Essa árvore
-   contém apenas os elementos visíveis da página e seus respectivos
-   estilos.
+| Técnica | Descrição | Uso Principal |
+| :--- | :--- | :--- |
+| **Entidade `&nbsp;`** | **Espaço Não Quebrável** (`Non-breaking space`). Insere um espaço adicional que **não é colapsado**. Também impede que uma quebra de linha ocorra naquele ponto. | Espaços extras entre palavras ou caracteres; preencher células vazias em tabelas. |
+| **Tag `<br>`** | Força uma **quebra de linha** (igual a um `Enter`). | Inserir quebras de linha manuais em textos (não use para layout). |
+| **Propriedade `white-space` (CSS)** | Controla como o navegador trata os espaços em branco dentro de um elemento. Valores como `pre`, `pre-wrap` ou `pre-line` alteram o comportamento padrão. | Preservar espaços e quebras de linha, como ao exibir códigos de programação ou poesia. |
+| **Tag `<pre>`** | Exibe o texto em uma **fonte monoespaçada** e preserva **todos** os espaços em branco e quebras de linha exatamente como foram digitados (comportamento similar a `white-space: pre`). | Exibir blocos de código ou texto pré-formatado. |
+| **`margin` e `padding` (CSS)** | **Margens** (espaço externo ao elemento) e **Preenchimento** (espaço interno ao elemento). | **Método recomendado** para controlar o espaçamento entre ou ao redor de elementos para fins de layout. |
 
-5. **Layout:** Nessa etapa, o navegador calcula a posição e o tamanho
-   exatos de cada elemento visível na tela. Isso é feito considerando o
-   conteúdo e os estilos de todos os elementos.
+-----
 
-6. **Pintura (ou Painting):** O navegador preenche os pixels na tela com
-   o conteúdo e os estilos calculados na etapa de layout,
-   renderizando a página visualmente.
+Para saber mais sobre como controlar o tratamento de espaços no HTML usando CSS, confira a videoaula sobre a propriedade `white-space`: [CSS: Aula \#36 - Propriedade white-space](https://www.youtube.com/watch?v=_W2-ExxUhxo).
 
-7. **Composição:** Os elementos pintados são combinados em camadas
-   para criar a visualização final, permitindo efeitos como
-   sobreposição e transparência.
-
-8. **Interação com JavaScript:** Se houver JavaScript na página, o
-   navegador pode pausar o processo de renderização, executar o
-   script e, dependendo do código, modificar a árvore DOM. Isso pode
-   acionar um novo ciclo de layout e pintura para refletir as
-   mudanças. 
-
-## Motores de renderização
-
-Diferentes navegadores usam diferentes motores de renderização para
-interpretar e exibir o conteúdo da web: 
-
-* **WebKit:** Utilizado pelo Safari.
-
-* **Gecko:** Usado pelo Firefox.
-
-* **Blink:** Desenvolvido a partir do WebKit, é usado pelo Google
-  Chrome, Opera e Microsoft Edge.
+http://googleusercontent.com/youtube_content/0
