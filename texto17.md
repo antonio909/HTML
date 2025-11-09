@@ -1,33 +1,72 @@
-# Como funciona os navegadores da web?
+# HTML - Cometários
 
-Navegadores da web funcionam enviando uma solicitação para um
-servidor web, que retorna os dados de uma página (como HTML, CSS
-e JavaScript). O navegador, então, usa um motor de renderização
-para interpretar esses códigos e exibir a página na tela, com textos,
-imagens e elementos interativos.
+Os comentários em HTML são usados para **adicionar anotações ou explicações** dentro do seu
+código, mas **não são exibidos** na janela do navegador para o usuário final. Eles são
+extremamente úteis para documentar seu código, facilitar a leitura por outros desenvolvedores
+(ou por você mesmo no futuro) e desativar temporariamente partes do código.
 
-## Etapas do funcionamento
+-----
 
-1. **Solicitação do usuário:** Você digita uma URL ou clica em um link.
+## Sintaxe do Comentário
 
-2. **Resolução de DNS:** O navegador traduz o nome do domínio (ex:
-   `www.google.com`) para um endereço IP numérico.
+A sintaxe para iniciar e encerrar um comentário em HTML é a seguinte:
 
-3. **Envio da solicitação HTTP:** O navegador envia uma requisição
-   para o servidor web onde o site está hospedado.
+$$\text{}$$
 
-4. **Resposta do servidor:** O servidor envia de volta os arquivos que
-   compõem a página da web, como HTML, CSS e JavaScript.
+  * **Início:** O comentário **começa** com \`\`
 
-5. **Renderização da página:**
+**Exemplo Prático:**
 
-   1. O navegador usa o HTML para estruturar o conteúdo.
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Comentário</title>
+</head>
+<body>
 
-   2. O CSS é usado para definir a aparência visual, como cores e
-      layout.
+    <h1>Título Principal</h1>
 
-   3. O JavaScript é executado para adicionar interativadade e
-      funcionalidades dinâmicas.
+    <p>Este é o conteúdo principal da página.</p>
 
-6. **Exibição:** A página é montada e exibida na janela do navegador
-   para você interagir.
+    <div>Outra seção.</div>
+
+</body>
+</html>
+```
+
+-----
+
+## Usos Comuns dos Comentários
+
+1.  **Explicações e Documentação:**
+
+      * Descrever a função de uma seção complexa do código.
+      * Indicar quem escreveu ou quando o código foi modificado.
+
+2.  **Desativar Conteúdo (Comentar o Código):**
+
+      * Você pode envolver qualquer código HTML, CSS ou JavaScript com comentários para
+        que ele não seja renderizado pelo navegador temporariamente. Isso é ótimo para testes
+        ou para "guardar" código que você pode precisar mais tarde.
+
+    > **Exemplo de desativação:**
+
+    > ````html
+    > > ```
+    > ````
+
+3.  **Lembretes:**
+
+      * Colocar notas para si mesmo sobre o que precisa ser feito em seguida.
+
+-----
+
+## ⚠️ Observações Importantes
+
+  * **Não São Visíveis:** Lembre-se que o **conteúdo dentro dos comentários não aparece na
+    página**, mas ele **pode ser visto** por qualquer pessoa que inspecione o código-fonte da
+    página (clicando com o botão direito $\rightarrow$ "Ver Código Fonte da Página" ou usando as
+    Ferramentas do Desenvolvedor).
+  * **Aninhamento:** Comentários HTML **não podem ser aninhados** (colocar um comentário
+    dentro de outro). O primeiro `-->` que o navegador encontrar encerrará o comentário.
