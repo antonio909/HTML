@@ -1,4 +1,4 @@
-# HTML - Elemento <body>
+# HTML - Elemento BODY
 
 ## Funções e Contexto
 
