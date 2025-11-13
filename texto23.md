@@ -1,50 +1,23 @@
-# Tags HTML
+# HTML - Elemento HEAD
 
-Tags HTML são marcadores que definem e organizam o conteúdo de
-páginas da web, como parágrafos, títulos e imagens. Elas são usadas
-para estruturar o conteúdo visual e semanticamente, e a maioria tem
-uma tag de abertura e uma tag de fechamento que delimitam o conteúdo.
-Exemplos comuns incluem `<h1>` para títulos e `<p>` para
-parágrafos.
+## O que é o `<head>`?
 
-## O que são tags HTML
+O elemento `<head>` contém **metadados** sobre o documento HTML. Ele é posicionado entre a tag
+de abertura `<html>` e a tag de abertura `<body>`.
 
-* São o código que estrutura o conteúdo de um site, como a planta
-  de uma casa para definir onde ficam as janelas e portas.
+Ele não é exibido diretamente na página web (no navegador), mas fornece informações cruciais
+sobre ela, como:
 
-* São compostas pelo sinais de menor (`<`) e maior (`>`), com o
-  nome da tag entre eles.
+* **Título da Página (com `<title>`):** O texto que aparece na aba do navegador.
 
-* A maioria das tags tem uma tag de abertura (por exemplo, `<div>`)
-  e uma tag de fechamento (por exemplo, `</div>`), com o conteúdo
-  entre elas.
+* **Codificação de Caracteres (com `<meta charset="...">`):** Define como os caracteres
+  serão exibidos (geralmente `utf-8`).
 
-* O uso de tags para o conteúdo correto é chamado de **semântica**, o
-  que ajuda na compreensão por navegadores, mecanismos de
-  busca e pessoas com deficiências.
+* **Links para Estilos (com `<link rel="stylesheet"...>`):** Liga a página a arquivos CSS para
+  estilização.
 
-## Exemplos de tags HTML comuns
+* **Metadados (com `<meta>`):** Informações para o navegador e mecanismos de busca, como a
+  descrição da página, o autor, e a configuração de visualização em dispositivos móveis.
 
-* **<h1> a <h6>**: Usadas para definir títulos e subtítulos, com `<h1>`
-  sendo o título principal e `<h6>` o menor.
-
-* **<p>**: Define um parágrafo.
-
-* **<a>**: Cria um link ou hyperlink.
-
-* **<img>**: Insere uma imagem na página.
-
-* **<div>**: Um contêiner genérico para agrupar outros elementos.
-
-* **<span>**: Usada para estilizar ou agrupar um pequeno trecho de
-  texto dentro de um bloco maior.
-
-* **<table>**: Usada para criar tabelas.
-
-## Tipos de Tags
-
-* **Block-level (nível de bloco):** Ocupam toda a largura disponível de
-  seu contêiner e criam uma nova linha (ex: `<div>`, `<p>`).
-
-* **Inline:** Ocupam apenas o espaço necessário em linha (ex: `<span>`,
-  `<a>`).
+* **Scripts (com `<script>`):** Embora os scripts JavaScript sejam frequentemente colocados
+  no final do `<body>`, alguns podem ser incluídos no `<head>`.
