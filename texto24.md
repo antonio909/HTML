@@ -39,3 +39,35 @@ metadado, e `content` fornece o valor.
 | `<meta name="description" content="Uma breve descrição sobre a página">` | `description` | Resumo do conteúdo da página, usado por motores de busca nos resultados da pesquisa (SERP). |
 | `<meta name="keywords" content="html,css,javascript">` | `keywords` | Lista de palavras-chave relacionadas ao conteúdo (menos relevante para CEO hoje em dia, mas ainda usado). |
 | `<meta name="viewport" content="width=device-width, initial-scale=1.0">` | `viewport` | Essencial para **design responsivo**, controla a dimensão da área de visualização do navegador no dispositivo (largura igual à do dispositivo, zoom inical de 100%). |
+
+3. `http-equiv` e `content` **(Equivalência HTTP)**
+
+Permite simular cabeçalhos de resposta HTTP para o navegador.
+
+| Exemplo de Código | `http-equiv` | Função |
+|-----|-----|-----|
+| `<meta http-equiv="refresh" content="5;url=https://novo-endereço.com">` | `refresh` | Recarrega a página a cada 5 segundos e, opcionalmente, redireciona para um novo URL. |
+| `<meta http-equiv="X-UA-Compatible" content="ie=edge">` | `X-UA-Compatible` | Força versões mais antigas do Internet Explorer a renderizar a página usando o modo mais recente disponível. |
+
+-----
+
+## Metadados para Redes Sociais (Open Graph Protocol)
+
+Muitos sites, como Facebook, Twitter/X e LinkedIn, usam um conjunto específico de metadados,
+o **Open Graph Protocol (OGP)**, para controlar como o link da sua página é exibido quando
+compartilhado.
+
+```HTML
+
+<meta property="og:title" content="Título do Artigo Compartilhado">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://seusite.com/pagina-compartilhada">
+<meta property="og:image" content="https://seusite.com/imagem-de-preview.jpg">
+<meta property="og:description" content="Descrição que aparece sob o título do link.">
+
+<meta property="twitter:card" content="summary_large_image">
+
+```
+
+O elemento `<meta>` é, portanto, **fundamental para a acessibilidade, SEO (Search Engine
+Optimization) e a apresentação da página** em diferentes contextos da web.
