@@ -42,4 +42,25 @@ texto:
  
   * `<em>`: Indica **ênfase** (geralmente exibido em *itálico*).
  
-  * `<b>`:
+  * `<b>`: Usado para estilizar texto em **negrito** sem conferir-lhe importância semântica
+    adicional (simplesmente para chamar a atenção).
+
+  * `<i>`: Usado para estilizar texto em *itálico* sem conferir-lhe ênfase (ex: termos técnicos,
+    nomes em latim).
+
+* **Citações e Código:**
+
+  * `<blockquote>`: Define uma **citação longa** (bloco de citação), geralmente recuada.
+
+  * `<cite>`: Usada para a **fonte** de uma citação.
+ 
+  * `<code>`: Exibe uma parte do texto como **código de computador**.
+
+* **Outros:**
+
+  * `<hr>`: Cria uma **linha horizontal** temática para separar conteúdo (tag vazia).
+ 
+  * `<span>`: Uma tag *inline* (em linha) usada para agrupar e aplicar estilos a uma **pequena
+    parte do texto**.
+
+  * `<del>`: Usada para texto que foi **deletado** (geralmente com um risco no meio).
